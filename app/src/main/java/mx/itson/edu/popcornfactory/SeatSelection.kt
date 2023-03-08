@@ -23,7 +23,7 @@ class SeatSelection : AppCompatActivity() {
 
         val confirm: Button = findViewById(R.id.confirm)
         confirm.setOnClickListener{
-            Toast.makeText(this,"Enjoy the movie! :D", Toast.LENGTH_LONG).show()
+            Toast.makeText(this,"Disfruta la película!", Toast.LENGTH_LONG).show()
         }
 
         val row1: RadioGroup = findViewById(R.id.row1)
@@ -36,8 +36,6 @@ class SeatSelection : AppCompatActivity() {
                 row2.clearCheck()
                 row3.clearCheck()
                 row4.clearCheck()
-
-                row1.check(checkedId)
             }
         }
 
@@ -53,8 +51,8 @@ class SeatSelection : AppCompatActivity() {
 
         row3.setOnCheckedChangeListener{ group,checkedId->
             if (checkedId >-1){
-                row1.clearCheck()
                 row2.clearCheck()
+                row1.clearCheck()
                 row4.clearCheck()
 
                 row3.check(checkedId)
@@ -63,9 +61,9 @@ class SeatSelection : AppCompatActivity() {
 
         row4.setOnCheckedChangeListener{ group,checkedId->
             if (checkedId >-1){
-                row1.clearCheck()
                 row2.clearCheck()
                 row3.clearCheck()
+                row1.clearCheck()
 
                 row4.check(checkedId)
             }

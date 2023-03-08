@@ -298,11 +298,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
         android:background="@color/mainText"
-        android:textSize="23sp"
         android:text="Screen"
-        android:textStyle="italic"/>
+        android:textAlignment="center"
+        android:textSize="23sp"
+        android:textStyle="italic" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -362,9 +362,10 @@
         android:id="@+id/confirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/round_button"
-        android:textColor="@color/black"
-        android:text="Confirm"
-        android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
-        android:paddingHorizontal="70dp"/></LinearLayout>
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button"
+        android:paddingHorizontal="70dp"
+        android:text="Confirm"
+        android:textColor="@color/black" />
+</LinearLayout>

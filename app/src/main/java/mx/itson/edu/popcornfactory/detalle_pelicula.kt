@@ -15,6 +15,7 @@ class Detalle_pelicula : AppCompatActivity(){
         val iv_pelicula_imagen: ImageView = findViewById(R.id.iv_pelicula_imagen)
         val tv_nombre_pelicula: TextView = findViewById(R.id.tv_nombre_pelicula)
         val tv_pelicula_desc: TextView = findViewById(R.id.tv_pelicula_desc)
+        val seatLeft: TextView = findViewById(R.id.seatLeft)
 
         val bundle = intent.extras
 
@@ -22,6 +23,7 @@ class Detalle_pelicula : AppCompatActivity(){
             iv_pelicula_imagen.setImageResource(bundle.getInt("header"))
             tv_nombre_pelicula.setText(bundle.getString("titulo"))
             tv_pelicula_desc.setText(bundle.getString("sinopsis"))
+            seatLeft.setText(bundle.getInt("numberSeats").toString())
         }
 
         var button: Button = findViewById(R.id.buyTickets)
